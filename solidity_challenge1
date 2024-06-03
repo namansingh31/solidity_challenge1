@@ -1,0 +1,41 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.9;
+
+contract challenge1{
+    uint num;
+    string name;
+    bool flag;
+    address addr;
+
+    function setNum() public{
+        num=28;
+    }
+    function setName() public{
+        name="naman";
+    }
+    function setFlag(bool _flag) public{
+        flag=_flag;
+    }
+    function setAddress(address _addr) public{
+         addr=_addr;
+    }
+
+    function getNum() view public returns(uint)
+    {
+        return num;
+    }
+
+    function getName() view public returns(string memory)
+    {
+        return name;
+    }
+
+    function getBool() view public returns(bool){
+        return flag;
+    }
+
+    function getAddress() view public returns(address){
+        return addr;
+    }
+
+}
